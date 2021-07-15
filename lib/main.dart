@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yard/screen/CustomGridview.dart';
 import 'package:yard/screen/horizontal_list.dart';
 import 'package:yard/screen/simple_grid.dart';
 import 'package:yard/screen/simple_list.dart';
@@ -83,7 +84,7 @@ class HomePage extends StatelessWidget {
               child: MaterialButton(
                 child: Text('Custom Gridview'),
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=> PageHorizontalList()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> PageCustomGridview()));
                 },
                 color: Colors.green,
                 textColor: Colors.white,
