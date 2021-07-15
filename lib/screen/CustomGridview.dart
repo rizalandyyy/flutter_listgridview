@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yard/screen/DetailCustomGridview.dart';
 
 class PageCustomGridview extends StatefulWidget {
   @override
@@ -30,7 +31,11 @@ class _PageCustomGridviewState extends State<PageCustomGridview> {
         child: Card(
           child: InkWell(
             onTap: (){
-
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> PageDetailCustomGridview(
+              nama: dataMakanan["nama"]!,
+              gambar: gambarMakanan!,
+              keterangan: dataMakanan["Keterangan"]!,
+            )));
             },
             child: Column(
               children: [
