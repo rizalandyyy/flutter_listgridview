@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yard/screen/horizontal_list.dart';
+import 'package:yard/screen/simple_grid.dart';
 import 'package:yard/screen/simple_list.dart';
 
 void main() {
@@ -57,6 +58,30 @@ class HomePage extends StatelessWidget {
               padding: EdgeInsets.all(16),
               child: MaterialButton(
                 child: Text('Horizontal List'),
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> PageHorizontalList()));
+                },
+                color: Colors.green,
+                textColor: Colors.white,
+              ),
+            ),
+
+            Container(
+              padding: EdgeInsets.all(16),
+              child: MaterialButton(
+                child: Text('Simple Gridview'),
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> PageSimpleGridview()));
+                },
+                color: Colors.green,
+                textColor: Colors.white,
+              ),
+            ),
+
+            Container(
+              padding: EdgeInsets.all(16),
+              child: MaterialButton(
+                child: Text('Custom Gridview'),
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=> PageHorizontalList()));
                 },
