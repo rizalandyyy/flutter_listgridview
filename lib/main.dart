@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yard/screen/horizontal_list.dart';
 import 'package:yard/screen/simple_list.dart';
 
 void main() {
@@ -57,7 +58,7 @@ class HomePage extends StatelessWidget {
               child: MaterialButton(
                 child: Text('Horizontal List'),
                 onPressed: (){
-
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> PageHorizontalList()));
                 },
                 color: Colors.green,
                 textColor: Colors.white,
