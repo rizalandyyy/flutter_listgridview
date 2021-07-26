@@ -1,3 +1,5 @@
+// @rizalandy ~ PC
+
 import 'package:flutter/material.dart';
 class PageHorizontalList extends StatelessWidget {
   @override
@@ -40,3 +42,5 @@ class PageHorizontalList extends StatelessWidget {
     );
   }
 }
+
+// @rizalandy ~ PC

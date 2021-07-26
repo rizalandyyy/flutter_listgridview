@@ -1,6 +1,12 @@
+// @rizalandy ~ PC
+
 import 'package:flutter/material.dart';
 import 'package:yard/screen/CustomGridview.dart';
+import 'package:yard/screen/bottom_bar_menu/PageBottomBar.dart';
+import 'package:yard/screen/dropdown_menu/PageDropDownMenu.dart';
 import 'package:yard/screen/horizontal_list.dart';
+import 'package:yard/screen/nav_drawer_menu/MenuNavDrawer.dart';
+import 'package:yard/screen/nav_drawer_menu/PageKontak.dart';
 import 'package:yard/screen/simple_grid.dart';
 import 'package:yard/screen/simple_list.dart';
 
@@ -28,6 +34,10 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity
       ),
       home: HomePage(),
+      routes: <String, WidgetBuilder>{
+        '/kontak': (BuildContext context)=> PageKontak(),
+        '/home_nav': (BuildContext context)=> PageNavBarMenu(),
+      },
     );
   }
 }
@@ -89,10 +99,48 @@ class HomePage extends StatelessWidget {
                 color: Colors.green,
                 textColor: Colors.white,
               ),
-            )
+            ),
+
+            Container(
+              padding: EdgeInsets.all(16),
+              child: MaterialButton(
+                child: Text('Navigation Drawer'),
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> PageNavBarMenu()));
+                },
+                color: Colors.green,
+                textColor: Colors.white,
+              ),
+            ),
+
+            Container(
+              padding: EdgeInsets.all(5),
+              child: MaterialButton(
+                child: Text('Bottom Bar Menu'),
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> PageBottomBarMenu()));
+                },
+                color: Colors.green,
+                textColor: Colors.white,
+              ),
+            ),
+
+            Container(
+              padding: EdgeInsets.all(5),
+              child: MaterialButton(
+                child: Text('Dropdown Menu'),
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> PageDropDownMenu()));
+                },
+                color: Colors.green,
+                textColor: Colors.white,
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
+
+// @rizalandy ~ PC

@@ -1,3 +1,5 @@
+// @rizalandy ~ PC
+
 import 'package:flutter/material.dart';
 
   class PageSimpleList extends StatelessWidget {
@@ -36,3 +38,5 @@ import 'package:flutter/material.dart';
       );
     }
   }
+
+// @rizalandy ~ PC

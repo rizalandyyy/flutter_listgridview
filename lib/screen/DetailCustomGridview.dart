@@ -1,3 +1,5 @@
+// @rizalandy ~ PC
+
 import 'package:flutter/material.dart';
 
 class PageDetailCustomGridview extends StatefulWidget {
@@ -92,3 +94,4 @@ class BagianKeterangan extends StatelessWidget {
   }
 }
 
+// @rizalandy ~ PC
